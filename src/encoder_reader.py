@@ -31,6 +31,9 @@ import pyb
 import utime
 
 class Encoder:
+    '''!
+    This class implements a motor encoder reader for the ME 405 kit.
+    '''
     def __init__(self,ch1_pin,ch2_pin,timer_num):
         '''!
         Creates a motor encoder reader. The starting position of the motor is set as the zero 
