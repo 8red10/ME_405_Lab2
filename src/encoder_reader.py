@@ -102,11 +102,11 @@ class Encoder:
         if delta > val:
             # adjust for underflow
             delta -= ar + 1
-            print(f'underflow happened!')
+            # print(f'underflow happened!')
         elif delta < neg_val:
             # adjust for overflow
             delta += ar + 1
-            print(f'overflow happened!')
+            # print(f'overflow happened!')
 
         # update the position variable with the timer delta
         self.position += delta
